@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+:root {
+	--oswald-font: 'Oswald', sans-serif;--poppins-font: 'Poppins', sans-serif;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
@@ -6,6 +12,7 @@ body {
 	overflow-x: hidden;
 	background: #000000;
 	color: white;
+	font-family: var(--poppins-font);
 }
 
 /* Nav */
@@ -41,11 +48,17 @@ body {
 }
 
 .main-text {
+	font-family: var(--oswald-font);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 46px;
 	line-height: 50px;
 	letter-spacing: 6.78641px;
+	margin-top: 5px;
+}
+
+.main-number {
+	font-family: var(--oswald-font);
 }
 
 .hr-line {
@@ -97,4 +110,47 @@ body {
 	border: none;
 	border-bottom: 1px solid #FFFFFF;
 	margin: 0 40px;
+}
+
+/* Stay connected */
+
+.social-box {
+	width: 342px;
+	height: 342px;
+	background: #222222;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 50px;
+}
+
+.social-box .sub {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+.social-box .sub span {
+	font-size: 30px;
+	line-height: 39px;
+	opacity: 0.5;
+}
+
+.gradient-line {
+	border: none;
+	border-bottom: 1px solid white;
+	opacity: 0.6;
+	margin: 30px auto;
+}
+
+.project-button {
+	width: 80px;
+	height: 30px;
+	border-radius: 76px;
+	border: 1px solid transparent;
+	background-image: linear-gradient(to right, #ff6e7f 0%, #20a9f3  51%, #ff6e7f  100%);
+	font-weight: bold;
 }
